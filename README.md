@@ -1,8 +1,8 @@
-# ChallengeBotController - Automated Registration Script Overview
+# Blackscale Challenge Automation - Automated Registration Script Overview
 
 ## Project Purpose
 
-ChallengeBotController is designed to automate the registration process on the [Blackscale Challenge](https://challenge.blackscale.media) website. The script mimics user interactions to complete the registration process seamlessly.
+Automated Registration Script is designed to automate the registration process on the [Blackscale Challenge](https://challenge.blackscale.media) website. The script mimics user interactions to complete the registration process seamlessly.
 
 ## Overview
 
