@@ -1,9 +1,65 @@
-#ChallengeBotController - Automated Registration Script Overview ChallengeBotController is a PHP script designed to automate the registration process on the "https://challenge.blackscale.media" website. It leverages Guzzle HTTP client for making requests and integrates with MailSlurp API for managing temporary email inboxes. The script follows a sequence of steps to complete the user registration, including form submission and email verification.
-Features Initialization: Sets up HTTP client with cookie management and configures MailSlurp API for email handling.
-Form Value Retrieval: Extracts the security token (stoken) required for form submission from the registration page.
-Temporary Email Inbox Creation: Generates a temporary email inbox using MailSlurp to securely receive verification emails.
-Form Submission: Automatically fills and submits the registration form with dynamically generated user data.
-Email Verification: Waits for and retrieves the email verification code from the temporary inbox.
-Captcha Handling: Submits the received verification code to bypass the captcha verification step.
-Site Key Extraction: Extracts the site key for Google reCAPTCHA from the captcha response for further automation.
+# ChallengeBotController - Automated Registration Script Overview
 
+## Project Purpose
+
+ChallengeBotController is designed to automate the registration process on the [Blackscale Challenge](https://challenge.blackscale.media) website. The script mimics user interactions to complete the registration process seamlessly.
+
+## Overview
+
+This PHP script utilizes Guzzle for HTTP requests and MailSlurp for managing temporary email inboxes. It performs the following key tasks:
+
+1. **Initialization:**
+   - Sets up the HTTP client with cookie management.
+   - Configures the MailSlurp API for handling temporary emails.
+
+2. **Form Value Retrieval:**
+   - Extracts the security token (stoken) from the registration page required for form submission.
+
+3. **Temporary Email Inbox Creation:**
+   - Creates a temporary email inbox using MailSlurp to receive verification emails securely.
+
+4. **Form Submission:**
+   - Submits the registration form with generated user data, including a unique email address.
+
+5. **Email Verification:**
+   - Waits for the verification email and extracts the verification code.
+
+6. **Captcha Handling:**
+   - Submits the verification code to bypass the captcha step.
+
+7. **Site Key Extraction:**
+   - Extracts the Google reCAPTCHA site key for further automation tasks.
+
+## Key Features
+
+- **Automated HTTP Requests:** Uses Guzzle to handle HTTP requests and responses efficiently.
+- **Email Management:** Integrates with MailSlurp to manage temporary email inboxes and retrieve verification codes.
+- **Captcha Bypass:** Handles Google reCAPTCHA challenges by extracting and submitting necessary tokens.
+- **Dynamic User Data:** Generates unique user data for each registration attempt to avoid duplication and ensure successful submissions.
+
+## Usage
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/yourusername/ChallengeBotController.git
+   ```
+
+2. **Install Dependencies:**
+   ```bash
+   composer install
+   ```
+
+3. **Configure Environment Variables:**
+   - Add your MailSlurp API key to the `.env` file:
+   ```env
+   MAILSLURP_KEY=your-mailslurp-api-key
+   ```
+
+4. **Run the Script:**
+   - Execute the script via a web route or command line to initiate the automated registration process.
+
+By following these steps, you can automate the registration process on the Blackscale Challenge website efficiently.
+
+---  
+
+This `README.md` provides a clear and concise overview of the project, its purpose, key features, and usage instructions.
