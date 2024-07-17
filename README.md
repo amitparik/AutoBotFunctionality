@@ -41,12 +41,12 @@ This PHP script utilizes Guzzle for HTTP requests and MailSlurp for managing tem
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/ChallengeBotController.git
+   git clone https://github.com/amitparik/AutobotFunctionality.git
    ```
 
 2. **Install Dependencies:**
    ```bash
-   composer install
+   composer install/ composer update
    ```
 
 3. **Configure Environment Variables:**
